@@ -94,7 +94,7 @@ function renderCurrentWeather(current, city) {
     var responseContainerEl = document.querySelector("#currentCity");
     var date = new Date(current.dt * 1000).toLocaleDateString("en-US");
     var weatherIcon = current.weather[0].icon
-    var iconurl = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
+    var iconurl = "https://openweathermap.org/img/w/" + weatherIcon + ".png";
     var headerText = `${city}, ${date}`
     var cityDateEl = document.createElement("h1");
     var weatherIconImgEl = document.createElement("img")
@@ -147,7 +147,7 @@ function renderForecast(daily) {
         var wind = daily[i].wind_speed
         var humidity = daily[i].humidity
         var weatherIcon = daily[i].weather[0].icon
-        var iconurl = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
+        var iconurl = "https://openweathermap.org/img/w/" + weatherIcon + ".png";
 
         var forecastCard = document.createElement('div')
         var dateListEl = document.createElement("li")
