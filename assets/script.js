@@ -21,7 +21,7 @@ function historyClick(event){
 
 
 function firstFetch(search) {
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${search}&appid=8e36cc3b758712e25d49cd55df172ced`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${search}&appid=8e36cc3b758712e25d49cd55df172ced`)
         .then(function (response) {
             return response.json()
         }).then(
